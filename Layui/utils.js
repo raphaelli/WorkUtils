@@ -131,6 +131,11 @@ layui.define(['jquery', 'topLayer'], function(exports) {
         });
     }
 
+    //配合 Shared/layout 获取根路径，用于请求链接
+    //window.ROOT = "@HttpContext.Current.Request.ApplicationPath";
+    //if (window.ROOT != "/") {
+    //    window.ROOT += "/";
+    //}  //Shared/layout中获取页面的 路径
     utils.getRoot = function() {
         if (window.ROOT)
             return window.ROOT;
